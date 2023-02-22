@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/lib1"
+    android:layout_height="match_parent"
+    tools:context=".ViewCourse">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All User Data"
+        android:textSize="23sp"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginVertical="20dp"
+        android:textColor="#DD0D54"/>
+
+    <!--recycler view for displaying our courses-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVContact"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
